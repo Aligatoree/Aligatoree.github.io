@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Описание страницы" />
+  <title>Seleznev Lev | Front-End Developer</title>
+  <link rel="icon" type="image/x-icon" href="img/icons/favicon.ico?" />
+  <link rel="stylesheet" href="css/style.min.css" />
+</head>
+
+
+<body>
+  <header id="header" class="header">
+  <div id="header__wrapper" class="header__wrapper">
+    <div class="language">
+      <button id="en">en</button>
+      <span class="language__slash">/</span>
+      <button id="ru">ru</button>
+    </div>
+    <div class="header__container">
+      <h1 class="header__head _en" lang="en">Portfolio website for front-end developer</h1>
+      <h1 class="header__head _ru" lang="ru">Сайт портфолио фронтенд разработчика</h1>
+      <p class="header__title _en" lang="en">
+        Hello, I'm <button class="header__title_name">Lev</button></br>and I am <span>Front-end</span> developer
+      </p>
+      <p class="header__title _ru" lang="ru">
+        Привет, Я <button class="header__title_name">Лев</button></br>и я Фронтенд разработчик
+      </p>
+
+      <p class="header__subtitle _en" lang="en">
+        I like creating websites with great user experiences.
+        So check my works and links down below :)
+      </p>
+      <p class="header__subtitle _ru" lang="ru">
+        Мне нравится создавать удобные и надежные сайты, которые вы сможете оценить дальше.
+      </p>
+      <ul class="header__socials">
+        <li class="header__socials_item">
+          <a href="https://www.linkedin.com/in/aligatore/" target="_blank"></a>
+        </li>
+        <li class="header__socials_item">
+          <a href="https://github.com/Aligatoree" target="_blank"></a>
+        </li>
+        <li class="header__socials_item">
+          <a href="mailto: AligatoreL7@gmail.com" target="_blank"></a>
+        </li>
+        <li class="header__socials_item">
+          <a href="https://t.me/Aligatore7" target="_blank"></a>
+        </li>        
+        <li class="header__socials_item">
+          <a href="https://wa.me/79215555108" target="_blank"></a>
+        </li>
+      </ul>
+      <a class="header__resume" href="cv.pdf" target="_blank">
+        <span class="_en" lang="en">view resume</span>
+        <span class="_ru" lang="ru">смотреть резюме</span>
+      </a>
+    </div>
+    <div id="info" class="info _hide">
+      <div id="blur" class="info__blur"></div>
+      <div id="info_popup" class="info__wrapper">        
+        <div class="info__img">
+          <picture><source srcset="img/photo.webp" type="image/webp"><img class="info__photo" src="img/photo.jpg" alt="Photo"/></picture>
+        </div>
+        <div class="info__container">
+          <h2 class="info__title _en" lang="en">About me</h2>          
+          <h2 class="info__title _ru" lang="ru">Обо мне</h2>
+          <div class="info__about _en" lang="en">              
+              <p>My name is Lev Seleznev. I was born in Russia.</p>              
+              <p>Recent events forced me to leave the country.
+              For now I have been living in Turkey for the last 6 months and trying to find a new home in Europe.</p>       
+              <p>I'm interested in video games, science fiction and modern technology.</p>              
+              <p>My dream is to live a happy life in a good country.</p>
+          </div>
+          <div class="info__about _ru" lang="ru">              
+            <p>Меня зовут Лев Сезелнёв. Я родился и вырос в России.</p>              
+            <p>Последние события вынудили меня покинуть страну, поэтому уже полгода я нахожусь в Турции и ищу способ переехать в Европу.</p> 
+            <p>Я увлекаюсь видеоиграми, научной фантастикой и технологиями.</p>              
+            <p>Мечтаю о спокойной жизни в хорошей стране.</p>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="header__mini" class="header__mini _hide">
+    <ul class="header__socials">
+      <li class="header__socials_item">
+        <a href="https://www.linkedin.com/in/aligatore/" target="_blank"></a>
+      </li>
+      <li class="header__socials_item">
+        <a href="https://github.com/Aligatoree" target="_blank"></a>
+      </li>
+      <li class="header__socials_item">
+        <a href="mailto: AligatoreL7@gmail.com" target="_blank"></a>
+      </li>
+      <li class="header__socials_item">
+        <a href="https://t.me/Aligatore7" target="_blank"></a>
+      </li>        
+      <li class="header__socials_item">
+        <a href="https://wa.me/79215555108" target="_blank"></a>
+      </li>
+      <li class="header__socials_name">
+        <button class="header__title_name _en" lang="en">Lev</button>
+        <button class="header__title_name _ru" lang="ru">Лев</button>
+      </li>
+    </ul>    
+  </div>
+</header>
+
+  <main class="main">
+  <div class="main__header"></div>
+  <div class="main__wrapper"> 
+
+    <section class="example">
+      <div class="example__view view" tabindex="0">
+        <div class="view__container">
+          <div class="view__text">
+            <p class="view__info _ru" lang="ru"> 
+              Проект главной страницы коммерческого банка. Сайт сделан для широкой аудитории, доступный с любого устройства. На нем реализована прокрутка новостей и онлайн обновление курса валют.
+            </p>
+            <p class="view__info _en" lang="en"> 
+              Project of the home page of a commercial bank. The site is made for a wide audience, accessible from any device. It also has a scrolling news feed and an online update of the exchange rate.
+            </p>
+            <div class="view__tags">
+              <span class="view__tag">html</span>
+              <span class="view__tag">css</span>
+              <span class="view__tag">javascript</span>
+            </div>
+          </div>
+          <div class="view__links">
+            <a class="view__link view__link_site" href="https://aligatoree.github.io/Bank/" target="_blank">
+              <span class="_ru" lang="ru">на сайт</span>
+              <span class="_en" lang="en">view site</span>
+            </a>
+            <a class="view__link view__link_github" href="https://github.com/Aligatoree/Bank" target="_blank">
+              <span class="_ru" lang="ru">к коду</span>
+              <span class="_en" lang="en">view code</span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="example__title"><span>01</span>
+        <h2 class="example__subtitle _en" lang="en">bank homepage</p>
+        <h2 class="example__subtitle _ru" lang="ru">главная страница банка</p>
+      </div>
+      <img
+        class="example__img"
+        src="img/example1.png"
+        alt="laptop with bank website"
+      />
+    </section>
+
+    <article id="skills" class="skills">
+      <h2 class="skills__title _en" lang="en">skills</h2>
+      <h2 class="skills__title _ru" lang="ru">навыки</h2>
+
+      <h3 class="skills__name _hide">html</h3>
+      <div class="skill html">
+        <button class="skill__switch"></button>
+        <div class="skill__about">
+          <p class="skill__title _en" lang="en">
+            <span>HTML</span> - is the code that is used to structure a web page
+            and its content.
+          </p>
+          <p class="skill__title _ru" lang="ru">
+            <span>HTML</span> - это код для структурирования и отображения
+            веб-страницы и её контента.
+          </p>
+          <p class="skill__subtitle _en" lang="en">
+            The websites I develop have
+          </p>
+          <p class="skill__subtitle _ru" lang="ru">
+            Сайты, которые я делаю, имеют
+          </p>
+          <ul class="skill__advantages">
+            <li class="skill__advantage">
+              <p class="_ru" lang="ru">Структурированный и чистый код</p>
+              <p class="_en" lang="en">Structured and clean code</p>
+            </li>
+            <li class="skill__advantage">
+              <p class="_ru" lang="ru">Семантическую разметку</p>
+              <p class="_en" lang="en">Semantic elements</p>
+            </li>
+            <li class="skill__advantage">
+              <p class="_ru" lang="ru">Валидную вёрстку</p>
+              <p class="_en" lang="en">Valid markup</p>
+            </li>
+          </ul>
+        </div>
+        <div class="skill__img"></div>
+      </div>
+      <h3 class="skills__name _hide">css</h3>
+      <div class="skill css">
+        <button class="skill__switch"></button>
+        <div class="skill__about">
+          <p class="skill__title _en" lang="en">
+            <span>CSS</span> - is the language for describing the presentation
+            of Web pages.
+          </p>
+          <p class="skill__title _ru" lang="ru">
+            <span>CSS</span> - формальный язык описания внешнего вида документа.
+          </p>
+          <p class="skill__subtitle _en" lang="en">On my sites you will find</p>
+          <p class="skill__subtitle _ru" lang="ru">На моих сайтах вы найдете</p>
+          <ul class="skill__advantages">
+            <li class="skill__advantage">
+              <p class="_ru" lang="ru">Отзывчивый дизайн</p>
+              <p class="_en" lang="en">Responsive design</p>
+            </li>
+            <li class="skill__advantage">
+              <p class="_ru" lang="ru">Полное соответствие макету</p>
+              <p class="_en" lang="en">Compliance with the layout</p>
+            </li>
+            <li class="skill__advantage">
+              <p class="_ru" lang="ru">Качественную мобильную версию</p>
+              <p class="_en" lang="en">Quality mobile version</p>
+            </li>
+          </ul>
+        </div>
+        <div class="skill__img"></div>
+      </div>
+      <h3 class="skills__name _hide">js</h3>
+      <div class="skill js">
+        <button class="skill__switch"></button>
+        <div class="skill__about">
+          <p class="skill__title _en" lang="en">
+            <span>JavaScript</span> - is computer programming language, used to
+            create interactive effects within web browsers.
+          </p>
+          <p class="skill__title _ru" lang="ru">
+            <span>JavaScript</span> - это язык программирования, для придания
+            интерактивности веб-страницам.
+          </p>
+          <p class="skill__subtitle _en" lang="en">
+            The code on my sites provides
+          </p>
+          <p class="skill__subtitle _ru" lang="ru">
+            Код на моих сайтах обеспечивает
+          </p>
+          <ul class="skill__advantages">
+            <li class="skill__advantage">
+              <p class="_ru" lang="ru">Надежность</p>
+              <p class="_en" lang="en">Reliability</p>
+            </li>
+            <li class="skill__advantage">
+              <p class="_ru" lang="ru">Кроссбраузерность</p>
+              <p class="_en" lang="en">Crossbrowser compatibility</p>
+            </li>
+            <li class="skill__advantage">
+              <p class="_ru" lang="ru">Функциональность</p>
+              <p class="_en" lang="en">Functionality</p>
+            </li>
+          </ul>
+        </div>
+        <div class="skill__img"></div>
+      </div>
+    </article>
+
+    <section class="example">
+      <div class="example__view view" tabindex="0">
+        <div class="view__container">
+          <div class="view__text">
+            <p class="view__info _ru" lang="ru">
+              Реализация макета туристической фирмы. Акцент был сделан на быстрой загрузке и плавной анимации. Для сайта мной был разработан адаптивный дизайн для мобильных устройств.
+            </p>
+            <p class="view__info _en" lang="en"> An example of a website for a travel company. The emphasis was on fast loading and smooth animations. Additionally, I developed an adaptive design for mobile devices.</p>
+            <div class="view__tags">
+              <span class="view__tag">html</span>
+              <span class="view__tag">css</span>
+              <span class="view__tag">javascript</span>
+            </div>
+          </div>
+          <div class="view__links">
+            <a class="view__link view__link_site" href="https://aligatoree.github.io/Adventure/" target="_blank">
+              <span class="_ru" lang="ru">на сайт</span>
+              <span class="_en" lang="en">view site</span>
+            </a>
+            <a class="view__link view__link_github" href="https://github.com/Aligatoree/Adventure" target="_blank">
+              <span class="_ru" lang="ru">к коду</span>
+              <span class="_en" lang="en">view code</span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="example__title"><span>02</span>
+        <h2 class="example__subtitle _en" lang="en">travel website</p>
+        <h2 class="example__subtitle _ru" lang="ru">туристический сайт</p>
+      </div>
+      <img
+        class="example__img"
+        src="img/example2.png"
+        alt="phone with business website"
+      />
+    </section>
+
+    <article class="programs">
+      <h2 class="programs__title _en" lang="en">programs</h2>
+      <h2 class="programs__title _ru" lang="ru">программы</h2>
+      <ul class="programs__list">
+        <li class="programs__item"></li>
+        <li class="programs__item"></li>
+        <li class="programs__item"></li>
+        <li class="programs__item"></li>
+        <li class="programs__item"></li>
+        <li class="programs__item"></li>
+      </ul>
+    </article>
+
+    <section class="example">
+      <div class="example__view view" tabindex="0">
+        <div class="view__container">
+          <div class="view__text">
+            <p class="view__info _ru" lang="ru"> 
+              Лэндинг для юриста из Санкт-Петербурга. Дизайн разработан с учетом целевой аудитории: простой интерфейс и крупный шрифт. На сайте реализована форма обратной связи и интерактивная карта.
+            </p>
+            <p class="view__info _en" lang="en"> Landing page for a lawyer from St. Petersburg. The design was developed for a potential target audience: a simple interface and a large font. The site has a feedback form and an interactive map.
+            </p>
+            <div class="view__tags">
+              <span class="view__tag">html</span>
+              <span class="view__tag">css</span>
+              <span class="view__tag">javascript</span>
+            </div>
+          </div>
+          <div class="view__links">
+            <a class="view__link view__link_site" href="https://aligatoree.github.io/Lawyer/" target="_blank">
+              <span class="_ru" lang="ru">на сайт</span>
+              <span class="_en" lang="en">view site</span>
+            </a>
+            <a class="view__link view__link_github" href="https://github.com/Aligatoree/Lawyer" target="_blank">
+              <span class="_ru" lang="ru">к коду</span>
+              <span class="_en" lang="en">view code</span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="example__title"><span>03</span>
+        <h2 class="example__subtitle _en" lang="en">lawyer sitecard</p>
+        <h2 class="example__subtitle _ru" lang="ru">сайт-визитка адвоката</p>
+      </div>
+      <img
+        class="example__img"
+        src="img/example3.png"
+        alt="phone with business website"
+      />
+    </section>
+  </div>
+</main>
+
+  <footer></footer>
+  <script src="js/app.min.js"></script>
+</body>
+
+</html>
