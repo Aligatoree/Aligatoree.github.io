@@ -628,29 +628,42 @@ html {
   margin: 0 auto;
 }
 
+.example__show {
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+}
+
 .example .view {
+  overflow: hidden;
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: auto;
-  max-height: 80%;
+  max-height: calc(100% - 50px);
   background-color: #fff;
   box-shadow: 2px 0px 10px black;
-  transition: 0.3s;
-  transform: translateY(-110%);
+  transition: 0.2s;
+  transform: translateY(-120%);
 }
 
 .example .view__container {
-  opacity: 0;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   gap: 4vw;
   width: 100%;
-  height: 100%;
+  height: auto;
+  max-height: calc(100% - 50px);
   padding: min(120px, 5.2vw) min(40px, 2vw);
   transform: translateY(0);
+  opacity: 0;
 }
 
 .example .view__text {
@@ -726,15 +739,14 @@ html {
   opacity: 1;
 }
 
-.example:hover > .view {
+.example__show._active + .view {
   transition: 0.3s;
-  transition-delay: 0.4s;
   transform: translate(0, 0);
 }
 
-.example:hover > .view .view__container {
-  transition: 0.5s;
-  transition-delay: 0.6s;
+.example__show._active + .view .view__container {
+  transition: 0.3s;
+  transition-delay: 0.3s;
   opacity: 1;
 }
 
@@ -1015,13 +1027,13 @@ html {
   }
 
   .header__title {
-    font-size: min(6.25vw, 2rem);
-    line-height: min(6.25vw, 2rem);
+    font-size: min(min(6.25vw, 6vh), 2rem);
+    line-height: min(min(6.25vw, 6vh), 2rem);
   }
 
   .header__subtitle {
-    font-size: min(4.7vw, 1.25rem);
-    line-height: min(4.7vw, 1.25rem);
+    font-size: min(min(4.7vw, 5vh), 1.25rem);
+    line-height: min(min(4.7vw, 5vh), 1.25rem);
   }
 
   .header__socials {
@@ -1057,10 +1069,12 @@ html {
   .header .info__wrapper {
     width: 100%;
     padding: min(55px, min(3.125vh, 9vw)) 30px;
+    padding-bottom: 50px;
     gap: min(20px, 10vw);
   }
 
   .header .info__photo {
+    align-self: start;
     flex-grow: 0;
     flex-shrink: 1;
   }
@@ -1080,13 +1094,13 @@ html {
   }
 
   .header .info__title {
-    font-size: min(6.25vw, 2rem);
-    line-height: min(6.25vw, 2rem);
+    font-size: min(min(6.25vw, 6vh), 2rem);
+    line-height: min(min(6.25vw, 6vh), 2rem);
   }
 
   .header .info__about {
-    font-size: min(4.7vw, 1.25rem);
-    line-height: min(4.7vw, 1.25rem);
+    font-size: min(min(4.7vw, 5vh), 1.25rem);
+    line-height: min(min(4.7vw, 5vh), 1.25rem);
   }
 
   .header .info p {
@@ -1171,7 +1185,6 @@ html {
   }
 
   .example {
-    border-top: 5px solid transparent;
     min-height: max(70vh, 400px);
     transition: 0.6s;
   }
@@ -1262,11 +1275,6 @@ html {
     transform: scale(0.95);
   }
 
-  .example:hover,
-  .example:focus {
-    border-top: 5px solid #9d1aff;
-  }
-
   .skills {
     min-height: min(600px, 60vw);
     padding: min(75px, 15.625vw) 5px;
@@ -1319,6 +1327,10 @@ html {
     flex: 100%;
     min-width: auto;
     width: 100%;
+  }
+
+  .main :first-child .view__container {
+    border-top: 2px #c8c8c8 solid;
   }
 
   ._freeze {
