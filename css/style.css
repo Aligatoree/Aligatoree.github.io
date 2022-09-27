@@ -248,6 +248,7 @@ html {
   padding: 5px;
   border-radius: 5px;
   background-color: #fff;
+  color: #000;
   cursor: pointer;
   -webkit-user-select: none;
      -moz-user-select: none;
@@ -479,6 +480,7 @@ html {
   align-items: center;
   height: 100%;
   width: auto;
+  border-radius: 10px;
 }
 
 .header .info__photo {
@@ -1099,10 +1101,9 @@ html {
     position: fixed;
     display: flex;
     z-index: 10;
-    top: 0;
+    top: -100px;
     width: 100%;
     background-color: #9d1aff;
-    transform: translateY(-100%);
   }
 
   .header__mini .header__socials {
@@ -1155,14 +1156,14 @@ html {
   .header .header__mini._show {
     z-index: 5;
     transition: 0.4s;
-    transform: translateY(0);
+    transform: translateY(100px);
     transition-delay: 0.1s;
   }
 
   .header .header__mini._hide {
     z-index: 5;
     transition: 0.1s;
-    transform: translateY(-100%);
+    transform: translateY(0);
   }
 
   .header .header__mini._disappear {
@@ -1354,28 +1355,6 @@ html {
   }
 }
 
-@media (max-width: 1000px) and (orientation: portrait) {
-  .header .info__container {
-    max-width: 440px;
-  }
-
-  .header .info__img {
-    display: none;
-  }
-
-  .programs__list {
-    width: calc(48vw + 80px);
-    min-width: calc(48vw + 80px);
-  }
-
-  .programs__item {
-    height: 24vw;
-    flex-basis: 24vw;
-    max-width: 175px;
-    max-height: 175px;
-  }
-}
-
 @media (max-width: 1000px) and (max-width: 500px) {
   .skills .skill__img {
     display: none;
@@ -1389,6 +1368,28 @@ html {
     height: auto;
     margin-top: 50%;
     transform: translateY(-50%);
+  }
+}
+
+@media (max-width: 1000px) and (orientation: portrait) {
+  .programs__list {
+    width: calc(48vw + 80px);
+    min-width: calc(48vw + 80px);
+  }
+
+  .programs__item {
+    height: 24vw;
+    flex-basis: 24vw;
+    max-width: 175px;
+    max-height: 175px;
+  }
+
+  .header .info__container {
+    max-width: 440px;
+  }
+
+  .header .info__img {
+    display: none;
   }
 }
 
