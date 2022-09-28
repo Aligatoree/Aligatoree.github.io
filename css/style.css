@@ -640,6 +640,7 @@ html {
 }
 
 .example .view {
+  z-index: 2;
   overflow: hidden;
   position: absolute;
   top: 0;
