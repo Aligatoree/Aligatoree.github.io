@@ -259,6 +259,7 @@ html {
   font-family: Nunito600;
   font-size: min(min(1.5rem, 2.5vw), 40px);
   background-color: rgba(0, 0, 0, 0);
+  color: #000;
 }
 
 .header .language ._active {
@@ -316,6 +317,7 @@ html {
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
+  fill: transparent;
 }
 
 .header__title_name:hover {
@@ -323,6 +325,7 @@ html {
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
+  fill: transparent;
   -webkit-animation: rainbow 3s linear infinite;
           animation: rainbow 3s linear infinite;
   background-size: 400% 100%;
@@ -595,6 +598,7 @@ html {
 }
 
 .example__title {
+  z-index: 1;
   position: absolute;
   display: flex;
   align-items: center;
@@ -629,7 +633,7 @@ html {
 }
 
 .example__show {
-  z-index: 1;
+  z-index: 2;
   position: absolute;
   top: 0;
   left: 0;
@@ -749,6 +753,10 @@ html {
   transition: 0.3s;
   transition-delay: 0.3s;
   opacity: 1;
+}
+
+.example__show._active + .view + .example__title {
+  z-index: 3;
 }
 
 .skills {
