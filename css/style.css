@@ -404,7 +404,7 @@ html {
   overflow: hidden;
   position: relative;
   display: inline-block;
-  padding: 16px 32px;
+  padding: 16px min(32px, 2.4vw);
   background: #9d1aff;
   border-radius: 10px;
   transition: 0.1s;
